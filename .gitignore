@@ -1,0 +1,69 @@
+# Unity Generated Files
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+
+# Visual Studio / JetBrains Rider
+.vs/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Unity Asset Cache
+/[Aa]ssets/[Ss]treamingAssets/
+Assets/AddressableAssetsData/*.bin*
+Assets/AddressableAssetsData/*.hash
+
+# Unity Collab Backup
+/[Uu]ser[Ss]ettings/Collab/
+
+# Packages
+[Pp]ackages/
+!Packages/manifest.json
+!Packages/packages-lock.json
+
+# Auto-generated Plugin Files
+[Aa]ssets/Plugins/*/Android/libs/
+[Aa]ssets/Plugins/*/Android/bin/
+[Aa]ssets/Plugins/*/iOS/Pods/
+[Aa]ssets/Plugins/*/iOS/Podfile.lock
+
+# Logs and Crash Reports
+*.log
+*.pidb
+*.symbols
+*.crash
+*.stacktrace
+*.dmp
+
+# Build Artifacts
+/[Bb]uilds/
+*.apk
+*.aab
+*.exe
+*.app
+*.ipa
+*.unitypackage
+
+# Player Settings and Local Dev Settings
+/ProjectSettings/EditorBuildSettings.asset
+/ProjectSettings/EditorSettings.asset
+
+# VSCode
+.vscode/
+
+# Mac OS
+.DS_Store
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Unity Shader Cache
+/[Aa]ssets/ShaderCache/
