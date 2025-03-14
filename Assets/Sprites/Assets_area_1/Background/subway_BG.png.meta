@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      subway_BG_0: 8997497180303042592
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

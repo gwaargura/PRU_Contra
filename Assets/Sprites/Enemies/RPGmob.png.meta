@@ -472,7 +472,21 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      RPGmob_0: 138014504869316818
+      RPGmob_1: 6634924903095304434
+      RPGmob_10: 7928206991157871821
+      RPGmob_11: 6067200819182439346
+      RPGmob_12: 5649131076659550760
+      RPGmob_13: 2150288482398314222
+      RPGmob_2: 4884091822578311982
+      RPGmob_3: 1234435196550272739
+      RPGmob_4: -1754826463896170894
+      RPGmob_5: -2132984671539142983
+      RPGmob_6: 1346820420278106568
+      RPGmob_7: -3588274832424327461
+      RPGmob_8: -8481699272811782761
+      RPGmob_9: -5957334603213865763
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

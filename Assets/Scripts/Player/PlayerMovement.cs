@@ -7,6 +7,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float fallMultiplier = 2.5f;  // Faster falling
     [SerializeField] private float lowJumpMultiplier = 2f; // Shorter jump if button is released early
     private Rigidbody2D rb;
+    private Animator animator;
     private bool isGrounded;
 
     [SerializeField] private Transform groundCheck;
@@ -15,14 +16,25 @@ public class PlayerMovement : MonoBehaviour
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
     }
 
     private void Update()
     {
         // Movement
         float moveInput = Input.GetAxisRaw("Horizontal");
-        Vector3 move = new Vector3(moveInput, 0f, 0f) * speed * Time.deltaTime;
+        Vector3 move = speed * Time.deltaTime * new Vector3(moveInput, 0f, 0f);
         transform.position += move;
+
+        // Animation
+        bool isMoving = !(Mathf.Abs(moveInput) == 0);
+        animator.SetBool("IsMoving", isMoving);
+
+        // Flip sprite
+        if (moveInput != 0)
+        {
+            transform.localScale = new Vector3(Mathf.Sign(moveInput), 1f, 1f);
+        }
 
         // Ground Check
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, 0.1f, groundLayer);
